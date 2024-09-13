@@ -1,0 +1,105 @@
+WARNING:- THIS APPLICATION WON'T WORK WITHOUT ADB CONNECTION.
+
+AAPPLICATION NAME:- ANDROID APP CONTROLLER 
+based on commands line interface.
+made in shell scripts.
+made by me.
+
+REQUIREMENTS:- 
+1.TERMUX MUST BE INSTALLED ON DEVICE.
+*an application that provides Linux shell environment to execute all Linux commands and much much more etc.
+*no more pc needed.
+Download it from this link:- https://f-droid.org/en/packages/com.termux/  
+recommended Version 0.118.0 (118)
+once done.
+2.ADB MUST BE CONFIGURED PROPERLY.
+
+************** STEPS TO CONNECT YOUR DEVICE WITH ADB ********************
+
+NOTE:- please follow all the steps carefully and perform them gently.
+
+WARNING:- DO NOT SKIP ANY SINGLE STEP 
+
+****************** INITIAL CONFIGURATION FOR ADB CONNECTION ************************
+ 
+Step1:- ENABLE DEVELOPER OPTION, IN ABOUT PHONE
+TAP 5 OR 6 TIMES ON MIUI VERSION OR ON BUILD NUMBER 
+
+      *****YOU HAVE SUCCESSFULLY ENABLED DEVELOPER OPTION*****
+
+Step2:- ENABLE USB DEBUGGING OPTION, IN DEVELOPER OPTION
+ENABLE USB DEBUGGING OPTION
+
+      *****YOU HAVE SUCCESSFULLY ENABLED USB DEBUGGING OPTION*****
+
+step3:- INSTALL ADB AND FASTBOOT DRIVER, ON PC 
+go to:- https://developer.android.com/tools/releases/platform-tools
+
+DOWNLOAD IT,EXTRACT IT, paste Platform Tools folder To Program Files in c:drive. Not in program files(x86)
+
+step4:- CONNECT YOUR DEVICE WITH PC VIA USB CABLE 
+
+NOTE:- as you connect your device to pc via usb you will get an pop up in your device ex:-
+
+Allow USB debugging?
+Tick on Always allow from this computer
+
+NOW,
+# open command prompt window + R ,Type cmd and Enter,
+
+1. paste this command
+ 
+ adb devices ; adb tcpip 5555 ; exit
+****** IMPORTANT MESSAGE *******
+
+NOTE:-  IF YOUR RESTART YOUR DEVICE OR REBOOT YOUR DEVICE OR SWICTH OFF.
+
+# you will have to perform these steps again on pc.
+
+ step1:- connect your device with pc via usb 
+ step2:- adb kill-server;adb start-server;adb tcpip 5555;
+
+****continue the final configuration****
+
+***************************** FINAL CONFIGURATION ******************************
+
+
+step1:- open phone settings search IP address or ip address in phone settings open it  and note down your IP address or ip address for further use.
+step2:- open TERMUX APP
+step2:- run this command in termux
+
+pkg install android-tools -y;pkg install git -y;pkg update;pkg upgrade -y;pkg install gum -y
+
+step3:- run this command in termux
+
+adb connect ip address 
+NOTE:- as you run this command ,you will get an pop up in your device ex:-
+
+Allow USB debugging?
+Tick on Always allow from this computer
+
+now,
+
+step4:- run this command adb devices 
+
+ ex:- you will see like this  ip address:5555 device 
+       
+   ***************** CONGRATULATION YOUR DEVICE IS CONNECTED WITH ADB ******************
+
+
+INSTALLATION PROCESS:-
+
+STEP1:- cd ~ && git clone https://github.com/UserDevAkku/aac.git && cd aac && chmod +x * && ./app.sh
+
+thats it .
+
+
+
+
+
+
+
+
+
+
+

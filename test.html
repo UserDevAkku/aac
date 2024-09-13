@@ -1,0 +1,150 @@
+<div class="requirements-container">
+    <div class="requirements-title">requirements</div>
+    <ul class="requirements-list">
+    <li class="requirements">
+        <p id="r-1">termux</p>
+    </li>
+    <li class="requirements">
+        <p id="r-2">adb tool</p>
+    </li>
+    </ul>
+    </div>
+        <ul class="main-list">
+             
+            </ul>
+            <div class="sub-points-1">FOLLOW THE COMPLETE GUIDE</div>
+            <div class="msg"><span class="msg-logo">**************</span> STEPS TO CONNECT YOUR DEVICE WITH ADB <span class="msg-logo">**************</span></div>
+            <div class="NOTE-CONTAINER"></span><div id="note">Please follow all the steps carefully and perform them gently</div></div>
+            <h3>DO NOT SKIP ANY SINGLE STEP</h3>
+            <hr></hr>
+            <div class="msg"><span class="msg-logo">**************</span> INITIAL CONFIGURATION FOR ADB CONNECTION <span class="msg-logo">**************</span></div>
+    
+            <ul class="main-list">
+                <li class="main-points">ENABLE DEVELOPER OPTION</li>
+                 <ol class="sub-list">
+                    <li class="sub-points">in phone settings, go to about phone</li>
+                    <div class="adb-logo-1"></div>
+                    <li class="sub-points">in about phone,find miui version or build number</li>
+                    <div class="adb-logo-2"></div>
+                  <li class="sub-points">tap 5 OR 6 or 7 times on miui version OR on build number<span id="version"> (untill you get a pop up)</span></li>
+                  <li class="sub-points">like this</li>
+                  <div class="adb-logo-3"></div>
+                 </ol>
+                </ul>
+                <div class="msg"><span class="msg-logo">**************</span> YOU HAVE SUCCESSFULLY ENABLED DEVELOPER OPTION <span class="msg-logo">**************</span></div>
+                <ul class="main-list">
+                    <li class="main-points">ENABLE USB DEBUGGING OPTION</li>
+                     <ol class="sub-list">
+                        <li class="sub-points">go to phone settings</li>
+                        <div class="adb-logo-4"></div>
+                        <li class="sub-points">type developer option in search bar</li>
+                        <div class="adb-logo-5"></div>
+                        <li class="sub-points">find usb debbuging option</li>
+                        <div class="adb-logo-6"></div>
+                        <li class="sub-points">simply allow it</li>
+                        <div class="adb-logo-7"></div>
+                      <li class="sub-points">Enable usb debugging option<span id="version"> (Do not worry it is totally safe)</span></li>
+                      <div class="adb-logo-8"></div>
+                     </ol>
+                    </ul>
+                    <div class="msg"><span class="msg-logo">**************</span> YOU HAVE SUCCESSFULLY ENABLED USB DEBUGGING OPTION <span class="msg-logo">**************</span></div>
+                    <ul class="main-list">
+                        <li class="main-points">INSTALL ADB AND FASTBOOT DRIVER ON PC</li>
+                         <ol class="sub-list">
+                            <li class="sub-points"><a class="download" href="https://developer.android.com/tools/releases/platform-tools">click here to download</a></li>
+                            <li class="sub-points">choose this option</li>
+                                <div class="adb-logo-9"></div>
+                                <li class="sub-points">Tick and click to download</li>
+                                    <div class="adb-logo-10"></div>
+                            <li class="sub-points">go to Downloads folder and extract the zip file</li>
+                            <div class="adb-logo-11"></div>
+                            <li class="sub-points">select this folder</li>
+                            <div class="adb-logo-12"></div>
+                            <li class="sub-points">copy the folder</li>
+                            <div class="adb-logo-13"></div>
+                            <li class="sub-points">go to c:drive</li>
+                            <div class="adb-logo-14"></div>
+                            <li class="sub-points">find program files folder</li>
+                            <div class="adb-logo-15"></div>
+                            <li class="sub-points">paste the platform tools folder inside it</li>
+                            <div class="adb-logo-16"></div>
+                         </ol>
+                        </ul>
+                        <div class="msg"><span class="msg-logo">**************</span> ADB DRIVER INSTALLED <span class="msg-logo">**************</span></div>
+                        <ul class="main-list">
+                            <li class="main-points">CONNECT YOUR DEVICE WITH PC VIA USB CABLE FOR ADB CONFIGURATION</li>
+                             <ol class="sub-list">
+                                <h3>as you connect your device via usb with pc you will get an pop up on your phone screen</h3>
+                              <li class="sub-points">like this</li>
+                             <div class="adb-logo-17"></div>
+                             <li class="sub-points">tick on the blank box</li>
+                             <div class="adb-logo-18"></div>
+                              <li class="sub-points">open command prompt window + R ,Type cmd and Enter.</li>
+                              <li class="sub-points">run all the command gently in command shown below</li>
+                              <span id="version">► adb devices</span>
+                              <div class="adb-logo-19"></div>
+                              <br>
+                              <li class="sub-points">you will see your device connected</li>
+                              <div class="adb-logo-20"></div>
+                              <br>
+                              <span id="version">► adb tcpip 5555</span>
+                              <div class="adb-logo-21"></div>
+                              <li class="sub-points">you will see something like this</li>
+                              <div class="adb-logo-22"></div>
+                              <span id="version">► exit</span>
+                             </ol>
+                            </ul>
+                            <h3>congratulation you have configured adb 90%</h3>
+                            <div class="msg"><span class="msg-logo">**************</span> IMPORTANT MESSAGE <span class="msg-logo">**************</span></div>
+                            <ul class="main-list">
+                                <li class="main-points">If you reboot or restart your phone after previous steps done</li>
+                                <h3># you will have to perform these steps again</h3>
+                                <br>
+                                <span id="version">► adb devices</span>
+                                <br>
+                                <span id="version">► adb tcpip 5555</span>
+                                <br>
+                                <span id="version">► exit</span>
+                                </ul>   
+                            <div class="msg"><span class="msg-logo">**************</span> FINAL CONFIGURATION <span class="msg-logo">**************</span></div>
+                            <ul class="main-list">
+                                <li class="main-points">ADB CONFIGURATION ON TERMUX</li>
+                                 <ol class="sub-list">
+                                  <li class="sub-points">open phone settings</li>
+                                  <div class="adb-logo-23"></div>
+                             <li class="sub-points">search IP address or ip address in phone settings</li>
+                             <div class="adb-logo-24"></div>
+                             <li class="sub-points">note down your IP address or ip address for further use</li>
+                             <div class="adb-logo-25"></div>
+                             <li class="sub-points">open termux application</li>
+                             <li class="sub-points">now we are going to install some packages</li>
+                             <li class="sub-points">run the following commands step by step</li>
+                             <li class="sub-points">step-1</li>
+                             <span id="version">► pkg install android-tools -y;pkg install git -y;pkg update;pkg upgrade -y;pkg install gum -y</span>
+                             <h3>Now, we are going to connect our device with adb</h3>
+                             <li class="sub-points">step-2</li>
+                             <span id="version">► adb connect (your ip address here,that you have already note down)</span>
+                             <div class="adb-logo-26"></div>
+                             <h3>as you enter this command in termux you will get an pop up on your phone screen</h3>
+                             <li class="sub-points">like this</li>
+                             <div class="adb-logo-27"></div>
+                             <li class="sub-points">Tick on the blank box</li>
+                             <div class="adb-logo-28"></div>
+                             <li class="sub-points">step-3</li>
+                             <span id="version">► adb devices</span>
+                             <h4>once you enter this command you should see your device there</h3>
+                                <li class="sub-points">like this</li>
+                                <div class="adb-logo-29"></div>
+                                <br>
+                                <div class="msg"><span class="msg-logo">**************</span> 100% ADB HAS BEEN CONFIGURED PROPERLY <span class="msg-logo">**************</span></div>
+                                <hr></hr>
+                                <br>
+                                <h2>now, you can install the application</h2>
+                                <li class="main-points">TYPE THIS COMMAND IN TERMUX TO START THE INSTALLATION PROCESS</li>
+                                <span id="version">► cd ~ && git clone https://github.com/UserDevAkku/aac.git && cd aac && chmod +x * && ./app.sh</span>
+                                <h2>during installation, mentally ready your self</h2>
+                                <div class="msg"><span class="msg-logo">**************</span> ENJOY THE APP  <span class="msg-logo">**************</span></div>
+                                <hr></hr>
+    
+                                
+    

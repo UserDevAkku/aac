@@ -1,0 +1,453 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  height: 100vh;
+  background: #dddddd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.about-container {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dddddd;
+}
+.about-app {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 2px;
+}
+.about-app .app-logo,
+#app-name {
+  width: fit-content;
+  height: fit-content;
+  color: blue;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#app-name {
+  color: navy;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.app-logo {
+  animation: logo-animation 1s ease-out 0s infinite both;
+  font-size: 45px;
+}
+@keyframes logo-animation {
+  0% {
+    color: rgb(25, 241, 216);
+  }
+  45% {
+    color: #f14f19;
+  }
+  75% {
+    color: hsl(248, 89%, 52%);
+  }
+  100% {
+    color: hsl(120, 93%, 47%);
+  }
+}
+.navbar{
+    background-color: #F6E96B;
+    height: 35px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.profile{
+    height: 20px;
+    width: 20px;
+}
+.profile img{
+height: 20px;
+width: 20px;
+}
+.profile-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aac-title
+{  
+    color: red;
+    margin-left: 25px;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.aac {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.aacInfo{
+    list-style-type: disc;
+    color: black;
+   padding: 5px;
+   margin-left: 3px;
+}
+.aac-requirements
+{ 
+
+    color: red;
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+
+}
+.aac-req{
+    margin: 3px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 3px;
+}
+.termux-Info{
+    color: black;
+    margin-left: 3px;
+    padding:  3px;
+    list-style-type: circle;
+    letter-spacing: 1px;
+}
+.laptop-Info{
+    color: black;
+    margin-left: 3px;
+    list-style-type: circle;
+    letter-spacing: 1px;
+}
+.adb-Info{
+    color: black;
+    margin-left: 3px;
+    padding: 3px;
+    list-style-type: circle;
+    letter-spacing: 1px;
+}
+.link{
+    text-decoration: none;
+    color: blue;
+    font-size: 12px;
+}
+.requirements-container {
+  height: 150px;
+}
+.requirements-title {
+  width: 300px;
+  text-transform: uppercase;
+  color: black;
+  background-color: #1595e6;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+.requirements #r-1,
+#r-2 {
+  color: red;
+  font-family: sans-serif;
+}
+.requirements-list {
+  list-style: disc;
+}
+.main-points {
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.sub-list {
+  list-style-type: circle;
+  margin: 10px;
+  padding: 2px;
+}
+.sub-points {
+  color: red;
+  font-size: 15px;
+}
+.download {
+  text-decoration: none;
+  color: blue;
+  text-transform: uppercase;
+}
+#version {
+  color: black;
+}
+.sub-points-1 {
+  color: #0e8ef79b;
+  text-align: center;
+}
+.msg {
+  color: red;
+  font-size: 20px;
+  margin: 10px;
+  padding: 3px;
+  text-align: center;
+}
+.msg-logo {
+  color: black;
+  font-size: 17px;
+}
+#note {
+  color: orange;
+  font-size: 15px;
+  padding: 2px;
+  text-align: center;
+}
+.NOTE {
+  color: black;
+  font-size: 25px;
+  padding: 2px;
+  height: 28px;
+  width: 60px;
+}
+.NOTE-CONTAINER {
+  height: 30px;
+  margin: 12px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.adb-logo-1 {
+  height: 150px;
+  width: 210px;
+  border-radius: 20%;
+  background-image: url(1.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-2 {
+  height: 150px;
+  width: 210px;
+  border-radius: 20%;
+  background-image: url(2.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-3 {
+  height: 150px;
+  width: 210px;
+  border-radius: 20%;
+  background-image: url(3.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-4 {
+  height: 150px;
+  width: 210px;
+  border-radius: 20%;
+  background-image: url(4.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-5 {
+  height: 150px;
+  width: 210px;
+  border-radius: 20%;
+  background-image: url(5.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-6 {
+  height: 150px;
+  width: 230px;
+  border-radius: 20%;
+  background-image: url(6.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-7 {
+  height: 300px;
+  width: 200px;
+  border-radius: 20%;
+  background-image: url(7.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-8 {
+  height: 300px;
+  width: 200px;
+  border-radius: 20%;
+  background-image: url(8.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-9 {
+  height: 310px;
+  width: 600px;
+  border-radius: 20%;
+  background-image: url(9.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-10 {
+  height: 310px;
+  width: 400px;
+  border-radius: 20%;
+  background-image: url(10.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-11 {
+  height: 300px;
+  width: 200px;
+  border-radius: 20%;
+  background-image: url(11.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-12 {
+  height: 300px;
+  width: 200px;
+  border-radius: 20%;
+  background-image: url(12.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-13 {
+  height: 300px;
+  width: 200px;
+  border-radius: 20%;
+  background-image: url(13.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-14 {
+  height: 230px;
+  width: 300px;
+  border-radius: 20%;
+  background-image: url(14.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-15 {
+  height: 300px;
+  width: 200px;
+  border-radius: 20%;
+  background-image: url(15.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-16 {
+  height: 300px;
+  width: 200px;
+  border-radius: 20%;
+  background-image: url(16.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-17 {
+  height: 150px;
+  width: 210px;
+  border-radius: 20%;
+  background-image: url(17.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-18 {
+  height: 150px;
+  width: 210px;
+  border-radius: 20%;
+  background-image: url(18.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-19 {
+  height: 200px;
+  width: 250px;
+  border-radius: 20%;
+  background-image: url(19.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-20 {
+  height: 200px;
+  width: 250px;
+  border-radius: 20%;
+  background-image: url(20.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-21 {
+  height: 200px;
+  width: 250px;
+  border-radius: 20%;
+  background-image: url(21.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-22 {
+  height: 200px;
+  width: 250px;
+  border-radius: 20%;
+  background-image: url(22.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-23 {
+  height: 150px;
+  width: 210px;
+  border-radius: 20%;
+  background-image: url(23.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-24 {
+  height: 150px;
+  width: 210px;
+  border-radius: 20%;
+  background-image: url(24.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-25 {
+  height: 180px;
+  width: 210px;
+  border-radius: 20%;
+  background-image: url(25.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-26 {
+  height: 180px;
+  width: 220px;
+  border-radius: 20%;
+  background-image: url(26.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-27 {
+  height: 180px;
+  width: 215px;
+  border-radius: 20%;
+  background-image: url(27.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-28 {
+  height: 180px;
+  width: 215px;
+  border-radius: 20%;
+  background-image: url(28.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+.adb-logo-29 {
+  height: 180px;
+  width: 215px;
+  border-radius: 20%;
+  background-image: url(29.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
